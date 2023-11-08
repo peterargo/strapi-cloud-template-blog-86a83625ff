@@ -13,11 +13,13 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {}
     },
     "description": {
       "type": "text",
-      "maxLength": 80
+      "maxLength": 80,
+      "pluginOptions": {}
     },
     "slug": {
       "type": "uid",
@@ -31,19 +33,22 @@
         "images",
         "files",
         "videos"
-      ]
+      ],
+      "pluginOptions": {}
     },
     "author": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::author.author",
-      "inversedBy": "articles"
+      "inversedBy": "articles",
+      "pluginOptions": {}
     },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
-      "inversedBy": "articles"
+      "inversedBy": "articles",
+      "pluginOptions": {}
     },
     "blocks": {
       "type": "dynamiczone",
@@ -52,7 +57,8 @@
         "shared.quote",
         "shared.rich-text",
         "shared.slider"
-      ]
+      ],
+      "pluginOptions": {}
     }
   }
 }
